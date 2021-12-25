@@ -23,7 +23,10 @@ def get_sum_digits(num):
     x4 = num % 10
     num //= 10
 
-    Sum = x1+x2+x3+x4
+    x5 = num % 10
+    num //= 10
+
+    Sum = x1+x2+x3+x4+x5
     return  Sum
 
-print(get_sum_digits(1234))
+print(get_sum_digits(12345))
