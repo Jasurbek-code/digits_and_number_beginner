@@ -25,8 +25,7 @@ def get_length(num):
 
     x5 = num % 10
 
-    uzunlik = int((x1**0) + (x2**0) + (x3**0) + (x4**0) + (x5**0))
-    return  uzunlik
+    return  int((x1**0) + (x2**0) + (x3**0) + (x4**0) + (x5**0))
 
 print(get_length(12346))
 
