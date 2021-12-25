@@ -16,9 +16,10 @@ def get_length(num):
     x2 = num // 10 % 10
     x3 = num // 100 % 10
     len = x1/x1 + x2/x2 + x3/x3
-    return num, "uzunligi=", int(len)
 
-print(get_length(456))
+    return int(len)
+
+print(get_length(145))
 
 
 
