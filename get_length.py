@@ -12,12 +12,20 @@ def get_length(num):
     # return number of digits in integer
 
     x1 = num % 10
-    x2 = num // 10 % 10
-    x3 = num // 100 % 10
-    x4 = num // 1000 % 10
-    x5 = num // 10000 % 10
+    num //= 10
 
-    uzunlik = x1**0 + x2**0 + x3**0 + x4**0 + x5**0
+    x2 = num % 10
+    num //= 10
+
+    x3 = num % 10
+    num //= 10
+
+    x4 = num % 10
+    num //= 10
+
+    x5 = num % 10
+
+    uzunlik = (x1**0) + (x2**0) + (x3**0) + (x4**0) + (x5**0)
     return  uzunlik
 
 print(get_length(12346))
