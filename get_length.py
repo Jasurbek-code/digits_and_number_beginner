@@ -1,7 +1,5 @@
 #get number of digits in an int?
-import math
 def get_length(num):
-    x1, x2, x3, x4 = 0, 0, 0, 0
     """
     Get length of integer
     
@@ -16,9 +14,9 @@ def get_length(num):
     x2 = num // 10 % 10
     x3 = num // 100 % 10
     x4 = num // 1000 % 10
-    len = x1/x1 + x2/x2 + x3/x3 + x4/x4
+    lens = x1/x1 + x2/x2 + x3/x3 + x4/x4
 
-    return int(len)
+    return int(lens)
 
 print(get_length(1234))
 
