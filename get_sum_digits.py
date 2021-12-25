@@ -12,19 +12,14 @@ def get_sum_digits(num):
     # return sum of digits in integer
 
     x1 = num % 10
-    num //= 10
 
-    x2 = num % 10
-    num //= 10
+    x2 = num //10 % 10
 
-    x3 = num % 10
-    num //= 10
+    x3 = num //100 % 10
 
-    x4 = num % 10
-    num //= 10
+    x4 = num //1000 % 10
 
-    x5 = num % 10
-    num //= 10
+    x5 = num //10000 % 10
 
     Sum = x1+x2+x3+x4+x5
     return  Sum
